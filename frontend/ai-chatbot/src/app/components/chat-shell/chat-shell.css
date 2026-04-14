@@ -12,3 +12,9 @@
 .omnibox {
   border-top: 1px solid var(--border)
 }
+
+@media screen and (max-width: 767px) {
+    .omnibox {
+        margin-bottom: 20px; /* Adjust the value as needed */
+    }
+}
