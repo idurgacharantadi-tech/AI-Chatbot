@@ -1,42 +1,71 @@
-AI Chatbot
-AI Chatbot is an AI-powered web application for conversational Q&A with URL/file understanding and citations. Ask questions about documents or links you provide—or just chat to learn or have some fun. *(Note: the model doesn’t have real-time information.)*
+# 🤖 AI Chatbot
 
-🔗 Live Demo
-🌐 https://www.durgacharantadi.com/ai-chatbot/
+> A full-stack AI chatbot powered by Amazon Bedrock (Claude), Spring Boot, Angular, and AWS serverless architecture.
 
-🧠 Features
-✅ Conversational Q&A  
-Drill down into complex documentation from pasted links or uploaded documents.
+---
 
-📎 URL & File Understanding with Citations  
-Upload PDFs or share URLs; the app reads them and cites sources in its responses.
+## 🌐 Overview
 
-💬 Follow-Up & Learning Assistant  
-Keep the chat going with follow-up questions to test yourself, learn deeply, or just ask for jokes.
+**AI Chatbot** is a conversational AI web application that enables users to interact with an intelligent assistant in real-time.
 
-🛠 Tech Stack
-Layer	Technology
-Frontend	Angular
-Backend	Spring Boot
-AI Services	Claude 3.5 Sonnet (via Amazon Bedrock)
-Hosting	AWS S3 + CloudFront
-Serverless	AWS Lambda
+The chatbot can:
 
-⚙️ How It Works
-User Input: Type a prompt, paste a URL, or upload a PDF.  
-Content Understanding: The app fetches and reads the provided content.  
-Answer Generation: Claude 3.5 Sonnet (via Bedrock) produces helpful responses with citations.  
-Results Displayed: Answers (with sources) appear in the chat interface.
+- 💬 Answer questions
+- 🧠 Generate intelligent responses
+- 📚 Understand conversational context
+- ⚡ Provide fast, AI-powered replies
 
-📁 Project Structure
-This repository contains both the frontend and backend code:
+This project demonstrates how to build a **production-style AI chatbot using AWS Bedrock + Java backend + Angular frontend + serverless deployment**.
 
-/frontend — Angular application
-/backend — Spring Boot backend with Bedrock integration
+---
 
-🧠 Powered By
-Amazon Bedrock
-Claude 3.5 Sonnet by Anthropic for answer generation
+## 🚀 Features
 
-📄 License
-This project uses AWS AI services and is intended for educational and portfolio purposes only.
+- ✅ Real-time conversational UI
+- ✅ AI-powered responses using Claude (Amazon Bedrock)
+- ✅ Clean chat interface
+- ✅ Scalable serverless backend
+- ✅ REST API integration
+- ✅ Extensible for knowledge base / RAG use cases
+- ✅ Modular architecture for future enhancements
+
+---
+
+## 🧰 Tech Stack
+
+| Technology | Purpose |
+|----------|---------|
+| 🅰️ **Angular** | Frontend chat UI |
+| ☕ **Java** | Backend logic |
+| 🌱 **Spring Boot** | REST API layer |
+| 🤖 **Claude (Amazon Bedrock)** | AI response generation |
+| ⚡ **AWS Lambda** | Serverless backend |
+| 🌐 **API Gateway** | API exposure |
+| 🪣 **Amazon S3** | Frontend hosting |
+| 🚀 **CloudFront** | CDN distribution |
+| 🔐 **IAM** | Secure AWS access |
+
+---
+
+## 🏗️ Architecture
+
+```text
+User
+ │
+ ▼
+Angular Chat UI
+ │
+ ▼
+API Gateway
+ │
+ ▼
+AWS Lambda
+ │
+ ▼
+Spring Boot Backend
+ │
+ ▼
+Amazon Bedrock (Claude)
+ │
+ ▼
+AI Response → User
